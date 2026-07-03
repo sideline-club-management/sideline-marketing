@@ -150,9 +150,9 @@
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div class="bg-slate-800 rounded-xl p-5 border border-slate-700">
-            <div class="w-8 h-8 mb-3 text-primary-400" aria-hidden="true"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div>
-            <p class="font-semibold text-white mb-1">"I never know if the format will fit the time."</p>
-            <p class="text-slate-400 text-sm">You pick groups of 4 and realise on the day the finals won't fit the window.</p>
+            <div class="w-8 h-8 mb-3 text-primary-400" aria-hidden="true"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg></div>
+            <p class="font-semibold text-white mb-1">"Working out who plays who takes forever — every fortnight."</p>
+            <p class="text-slate-400 text-sm">Go Games rotates hosts every few weeks. You're back at a blank spreadsheet splitting up visiting clubs and dodging the same repeat fixtures.</p>
           </div>
           <div class="bg-slate-800 rounded-xl p-5 border border-slate-700">
             <div class="w-8 h-8 mb-3 text-primary-400" aria-hidden="true"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
@@ -344,7 +344,7 @@
         </div>
 
         <!-- Live Scores -->
-        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-20">
           <div class="lg:order-2">
             <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Live scores and standings on the day</h3>
             <p class="text-slate-600 mb-6 leading-relaxed">Enter scores from your phone. Standings update instantly for everyone — managers, parents, spectators — via the public event page. Send one link, and stop answering questions.</p>
@@ -406,6 +406,42 @@
           </div>
         </div>
 
+        <!-- Go Games -->
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Go Games sorted from a photo, not a spreadsheet</h3>
+            <p class="text-slate-600 mb-6 leading-relaxed">County boards send round schedules as an image — host club, visiting clubs, how many teams each is bringing. Upload it and Féile reads it, creates every team, and builds a fair, cross-club fixture list automatically. No re-typing club names every fortnight, no working out who plays who by hand.</p>
+            <ul class="space-y-3 text-slate-700 text-sm">
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-primary-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Upload the county board's schedule photo — clubs and teams created for you</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-primary-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Fair cross-club fixtures, capped games per team</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 text-primary-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Built for how Go Games actually runs — no scores, no finals, no stress</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <p class="text-xs font-semibold text-primary-600 uppercase tracking-wider mb-4">Go Games — Schedule Import</p>
+            <div class="space-y-3">
+              <div class="rounded-xl p-4 border border-slate-200 bg-slate-50">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-semibold text-slate-900 text-sm">Drum GAA (Host)</span>
+                  <span class="text-xs bg-primary-100 text-primary-700 font-bold px-2 py-0.5 rounded-full shrink-0 ml-2">2 teams</span>
+                </div>
+                <p class="text-slate-500 text-xs">Visiting: Seán Dolans (3), Claudy (2), Kilrea (2)</p>
+              </div>
+              <div class="rounded-xl p-4 border border-slate-200 bg-slate-50">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-semibold text-slate-900 text-sm">Ballinderry GAA (Host)</span>
+                  <span class="text-xs bg-primary-100 text-primary-700 font-bold px-2 py-0.5 rounded-full shrink-0 ml-2">1 team</span>
+                </div>
+                <p class="text-slate-500 text-xs">Visiting: Glack (2), Greenlough (2)</p>
+              </div>
+              <div class="rounded-xl p-4 border-2 border-green-300 bg-green-50">
+                <p class="font-semibold text-slate-900 text-sm">9 teams · 24 fixtures generated</p>
+                <p class="text-slate-600 text-xs">Cross-club matchups first, capped at 3 games per team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -461,7 +497,7 @@
               <span class="text-primary-300 ml-1 text-sm">one-off</span>
             </div>
             <ul class="space-y-2.5 mb-8 text-sm text-primary-100 flex-1">
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Single event, all features</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Single blitz or tournament, all features</li>
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-primary-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>£59 credited if you move to annual within 30 days</li>
             </ul>
             <a href="#enquire" class="block text-center bg-white/20 hover:bg-white/30 border border-white/30 text-white font-semibold py-2.5 rounded-xl transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
@@ -479,7 +515,7 @@
               <span class="text-primary-200 ml-1 text-sm">/year</span>
             </div>
             <ul class="space-y-2.5 mb-8 text-sm text-primary-100 flex-1">
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Unlimited events</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Unlimited events, including bi-weekly Go Games</li>
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Unlimited admin accounts</li>
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-white mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>All features included</li>
             </ul>
