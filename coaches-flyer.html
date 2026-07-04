@@ -27,12 +27,12 @@
 
   /* ---- Header ---- */
   .header {
-    padding: 10mm 16mm 4mm;
+    padding: 7mm 16mm 3mm;
     background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
     position: relative;
   }
   .blob1 { position: absolute; top: -30mm; right: -20mm; width: 90mm; height: 90mm; background: #e0f2fe; border-radius: 50%; opacity: .7; filter: blur(2px); }
-  .brand { display: flex; align-items: center; gap: 4mm; margin-bottom: 4mm; position: relative; }
+  .brand { display: flex; align-items: center; gap: 4mm; margin-bottom: 3mm; position: relative; }
   .brand img { width: 14mm; height: 14mm; }
   .brand-text { font-size: 12pt; font-weight: 700; color: #0f172a; }
   .brand-text span { color: #0284c7; }
@@ -44,8 +44,8 @@
   }
   .dot { width: 2mm; height: 2mm; border-radius: 50%; background: #0ea5e9; }
   h1 {
-    font-size: 22pt; line-height: 1.12; font-weight: 800; color: #0f172a;
-    margin: 0 0 3.5mm; letter-spacing: -0.02em; position: relative;
+    font-size: 21pt; line-height: 1.1; font-weight: 800; color: #0f172a;
+    margin: 0 0 2.5mm; letter-spacing: -0.02em; position: relative;
     max-width: 150mm;
   }
   h1 .accent { color: #0284c7; }
@@ -58,7 +58,7 @@
   .pains {
     background: #0f172a;
     color: white;
-    padding: 5mm 16mm;
+    padding: 3.5mm 16mm;
     display: flex;
     gap: 6mm;
   }
@@ -67,22 +67,22 @@
   .pain-item b { color: white; display: block; margin-bottom: 0.5mm; }
 
   /* ---- Features ---- */
-  .features { padding: 6mm 16mm 3mm; flex: 1; }
-  .features h2 { font-size: 14pt; font-weight: 800; color: #0f172a; margin: 0 0 1mm; }
-  .features .sub { font-size: 9pt; color: #64748b; margin: 0 0 4mm; }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .features { padding: 4mm 16mm 2mm; flex: 1; }
+  .features h2 { font-size: 13.5pt; font-weight: 800; color: #0f172a; margin: 0 0 1mm; }
+  .features .sub { font-size: 8.7pt; color: #64748b; margin: 0 0 3mm; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
   .card {
     background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4mm;
-    padding: 4mm;
+    padding: 3.2mm;
   }
   .icon {
-    width: 8mm; height: 8mm; border-radius: 2.5mm; background: #0284c7;
+    width: 7.5mm; height: 7.5mm; border-radius: 2.5mm; background: #0284c7;
     display: flex; align-items: center; justify-content: center;
-    margin-bottom: 2mm;
+    margin-bottom: 1.6mm;
   }
-  .icon svg { width: 5mm; height: 5mm; stroke: white; fill: none; }
-  .card h3 { font-size: 10pt; font-weight: 700; color: #0f172a; margin: 0 0 1.2mm; }
-  .card p { font-size: 8.5pt; line-height: 1.32; color: #475569; margin: 0; }
+  .icon svg { width: 4.5mm; height: 4.5mm; stroke: white; fill: none; }
+  .card h3 { font-size: 9.5pt; font-weight: 700; color: #0f172a; margin: 0 0 1mm; }
+  .card p { font-size: 8.2pt; line-height: 1.28; color: #475569; margin: 0; }
 
   /* ---- Stat banner ---- */
   .banner {
@@ -99,11 +99,35 @@
   .banner .quote span { color: #bae6fd; }
   .banner .from { font-size: 8pt; color: #e0f2fe; margin-top: 1.5mm; font-weight: 500; }
 
+  /* ---- Treoir (AI co-organiser) ---- */
+  .treoir {
+    margin: 3mm 16mm 0;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 4mm;
+    padding: 3.5mm 7mm;
+  }
+  .treoir-top { display: flex; align-items: center; gap: 3mm; margin-bottom: 2mm; }
+  .treoir-badge {
+    display: inline-flex; align-items: center; gap: 1.5mm;
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+    color: #0f172a; font-weight: 800; font-size: 9.5pt;
+    padding: 1mm 3.5mm; border-radius: 20mm;
+  }
+  .treoir-badge svg { width: 3.5mm; height: 3.5mm; fill: #0f172a; }
+  .treoir-tag { color: #94a3b8; font-size: 8.5pt; font-weight: 600; }
+  .treoir-body { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; align-items: center; }
+  .treoir-body h3 { color: white; font-size: 11pt; font-weight: 800; margin: 0 0 1.2mm; }
+  .treoir-body p { color: #cbd5e1; font-size: 8.5pt; line-height: 1.35; margin: 0; }
+  .bubble { font-size: 7.8pt; line-height: 1.3; padding: 2mm 3.5mm; border-radius: 3mm; margin-bottom: 1.5mm; max-width: 92%; }
+  .bubble-user { background: #0284c7; color: white; border-bottom-right-radius: 0.8mm; margin-left: auto; }
+  .bubble-ai { background: #1e293b; color: #e2e8f0; border-bottom-left-radius: 0.8mm; }
+
   /* ---- Footer / CTA ---- */
   .footer {
     margin-top: auto;
     background: #f1f5f9;
-    padding: 6mm 16mm 7mm;
+    padding: 5mm 16mm 6mm;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,20 +143,20 @@
 
   /* ---- Page 2: screens ---- */
   .screens-header {
-    padding: 12mm 16mm 4mm;
+    padding: 7mm 16mm 3mm;
     background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
   }
-  .screens-header .brand { margin-bottom: 5mm; }
-  .screens-header h2 { font-size: 20pt; font-weight: 800; color: #0f172a; margin: 0 0 2mm; letter-spacing: -0.01em; }
-  .screens-header p { font-size: 10pt; color: #64748b; margin: 0; max-width: 150mm; }
+  .screens-header .brand { margin-bottom: 3mm; }
+  .screens-header h2 { font-size: 18pt; font-weight: 800; color: #0f172a; margin: 0 0 1.5mm; letter-spacing: -0.01em; }
+  .screens-header p { font-size: 9.5pt; color: #64748b; margin: 0; max-width: 150mm; }
 
-  .screen-block { padding: 5mm 16mm; display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 8mm; align-items: center; }
+  .screen-block { padding: 3mm 16mm; display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 8mm; align-items: center; }
   .screen-block.reverse .text { order: 2; }
   .screen-block.reverse .mock { order: 1; }
-  .screen-block .text h3 { font-size: 13pt; font-weight: 800; color: #0f172a; margin: 0 0 2mm; }
-  .screen-block .text p { font-size: 9pt; line-height: 1.45; color: #475569; margin: 0; }
+  .screen-block .text h3 { font-size: 12.5pt; font-weight: 800; color: #0f172a; margin: 0 0 1.5mm; }
+  .screen-block .text p { font-size: 8.7pt; line-height: 1.4; color: #475569; margin: 0; }
 
-  .mock { background: white; border: 1px solid #e2e8f0; border-radius: 3.5mm; padding: 4mm; box-shadow: 0 1mm 4mm rgba(15,23,42,0.06); }
+  .mock { background: white; border: 1px solid #e2e8f0; border-radius: 3.5mm; padding: 3.5mm; box-shadow: 0 1mm 4mm rgba(15,23,42,0.06); }
   .mock-dark { background: #0f172a; border: none; }
   .mock-label { font-size: 6.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0284c7; margin: 0 0 2.5mm; }
   .mock-dark .mock-label { color: #64748b; }
@@ -221,9 +245,20 @@
       </div>
     </div>
 
-    <div class="banner">
-      <div class="quote">What used to take an <span>evening</span> now takes <span>minutes.</span>
-        <div class="from">That's the whole reason Féile exists.</div>
+    <div class="treoir">
+      <div class="treoir-top">
+        <span class="treoir-badge"><svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM18 15a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 15Z"/></svg>Treoir</span>
+        <span class="treoir-tag">Your AI co-organiser, built in</span>
+      </div>
+      <div class="treoir-body">
+        <div>
+          <h3>The bit no spreadsheet can do</h3>
+          <p>Treoir knows your fixtures, scores and standings all day. Ask it anything &mdash; it doesn't just answer, it acts.</p>
+        </div>
+        <div>
+          <div class="bubble bubble-user">Team 4 didn't show up</div>
+          <div class="bubble bubble-ai">I can mark a walkover for Clann Éireann, or reshuffle the group &mdash; which do you want?</div>
+        </div>
       </div>
     </div>
 
@@ -304,6 +339,18 @@
             <tr><td>Burt GAA</td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr>
           </tbody>
         </table>
+      </div>
+    </div>
+
+    <div class="screen-block reverse">
+      <div class="text">
+        <h3>Treoir handles the chaos too</h3>
+        <p>Running behind? A team no-show? Treoir knows the live state of the day &mdash; fixtures, scores, standings &mdash; and can act on it, not just chat about it.</p>
+      </div>
+      <div class="mock mock-dark">
+        <p class="mock-label">Treoir &mdash; Day-of Assistant</p>
+        <div class="bubble bubble-user">We're 20 minutes behind, what should we cut?</div>
+        <div class="bubble bubble-ai">Trim the warm-up gap between rounds &mdash; that recovers 18 minutes without touching kick-off times.</div>
       </div>
     </div>
 
