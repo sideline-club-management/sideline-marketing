@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sideline Féile privacy policy — Sideline Community</title>
+  <meta name="description" content="What Sideline Féile stores to run a tournament, who processes it, and how to have it removed. Organiser and manager contacts only — no player records." />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50:  '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased overflow-x-hidden">
+
+  <main>
+
+    <!-- HERO -->
+    <section class="pt-16 pb-12 sm:pt-20 sm:pb-16 bg-gradient-to-b from-primary-50 via-white to-white relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-100 rounded-full opacity-60 blur-3xl"></div>
+        <div class="absolute top-40 -left-20 w-72 h-72 bg-sky-100 rounded-full opacity-40 blur-2xl"></div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
+        <div class="max-w-3xl mx-auto text-center">
+
+          <div class="mb-8">
+            <a href="/" class="inline-flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded" aria-label="Sideline Community home">
+              <img src="/sideline-logo.png" alt="" aria-hidden="true" class="w-10 h-10" />
+              <span class="font-semibold text-slate-900">Sideline <span class="text-primary-600">Community</span></span>
+            </a>
+          </div>
+
+          <div class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5 mx-auto">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary-500" aria-hidden="true"></span>
+            Sideline Féile
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight mb-5">
+            What a tournament needs, and nothing more
+          </h1>
+
+          <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            F&eacute;ile stores organisers, team managers, fixtures and results. It holds no information about players.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="pb-20">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <div class="rounded-2xl bg-primary-50 border border-primary-100 p-6 sm:p-8">
+          <p class="text-slate-800 leading-relaxed"><span class="font-semibold">F&eacute;ile holds no information about players.</span> Running a tournament needs organisers, team managers, fixtures and results &mdash; so that is what it stores. Nobody&rsquo;s child is in the database.</p>
+        </div>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">What is stored</h2>
+
+        <h3 class="mt-7 font-semibold text-slate-900">If you organise</h3>
+
+        <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5 marker:text-primary-400">
+          <li>Your email address, used to sign you in. There is no password &mdash; signing in sends a link to your email.</li>
+          <li>Your club&rsquo;s name, and the names and email addresses of anyone you invite to help organise or keep score.</li>
+          <li>The tournaments you create: name, dates, venues, pitches, age group, format, and the contact details you choose to publish on the tournament&rsquo;s page.</li>
+          <li>Any schedule sheet or document you upload.</li>
+        </ul>
+
+        <h3 class="mt-7 font-semibold text-slate-900">If you enter a team</h3>
+
+        <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5 marker:text-primary-400">
+          <li>The club and team name.</li>
+          <li>The team manager&rsquo;s name, and their phone number and email address if given, so the organiser can reach them about fixtures.</li>
+          <li>Whether the entry is confirmed and whether an entry fee has been paid. Payments themselves are not taken through the app.</li>
+        </ul>
+
+        <h3 class="mt-7 font-semibold text-slate-900">Once it is running</h3>
+
+        <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5 marker:text-primary-400">
+          <li>Fixtures, kick-off times, pitch allocations, scores and standings.</li>
+        </ul>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">What is public</h2>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">A tournament has a public page so players, parents and clubs can follow it without an account. That page shows the fixtures, times, pitches, team names, scores and standings, along with whatever contact details the organiser chose to publish. Manager phone numbers and email addresses are not shown publicly &mdash; they are visible to the organising club.</p>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Who else processes it</h2>
+
+        <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5 marker:text-primary-400">
+          <li><span class="font-medium text-slate-900">Supabase</span> hosts the database, the sign-in system and the server-side functions. Everything described above is stored there.</li>
+          <li><span class="font-medium text-slate-900">Anthropic</span> is used only when you ask the app to read a schedule or a group draw from a sheet you have uploaded, and when you use the AI organiser. The content of that request is sent to Anthropic&rsquo;s API to be turned into fixtures. Nothing else in your tournament is sent.</li>
+        </ul>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">There is no analytics service, no advertising network, and no tracking of any kind.</p>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">How long it is kept</h2>
+
+        <!-- TODO: fill this in. -->
+        <p class="mt-4"><span class="inline-block rounded-lg bg-amber-50 border border-amber-200 px-3 py-1.5 text-sm font-medium text-amber-900">[retention period]</span> Deleting a tournament removes its teams, fixtures, standings and documents with it.</p>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Your rights</h2>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">You can ask for a copy of what is held about you, ask for it to be corrected, or ask for it to be deleted. Organisers can delete their own account from within the app, which removes the account and the clubs it owns. For anything else &mdash; including if you entered a team and want the manager details removed &mdash; get in touch and it will be dealt with within one month.</p>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Children</h2>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">F&eacute;ile is used to run youth tournaments, but it is a tool for the adults running them. It holds no names, dates of birth or any other personal information about players. A team is recorded as a club and a team name, with an adult manager as the contact.</p>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Who is responsible</h2>
+
+        <!-- TODO: fill this in. -->
+        <p class="mt-4"><span class="inline-block rounded-lg bg-amber-50 border border-amber-200 px-3 py-1.5 text-sm font-medium text-amber-900">[controller name and address]</span></p>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Getting in touch</h2>
+
+        <!-- TODO: fill this in. -->
+        <p class="mt-4"><span class="inline-block rounded-lg bg-amber-50 border border-amber-200 px-3 py-1.5 text-sm font-medium text-amber-900">[contact email]</span></p>
+        <p class="mt-14 text-sm text-slate-500">Last updated 12 September 2026.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
+        <div>
+          <a href="/" class="flex items-center gap-2 mb-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded" aria-label="Sideline Community home">
+            <img src="/sideline-logo.png" alt="" aria-hidden="true" class="w-7 h-7" />
+            <span class="font-semibold text-white text-sm">Sideline <span class="text-primary-300">Community</span></span>
+          </a>
+          <p class="text-sm max-w-xs">Giving the GAA community the tools to run their club from the sideline.</p>
+        </div>
+        <nav class="flex flex-wrap gap-x-6 gap-y-3 text-sm" aria-label="Footer navigation">
+          <a href="https://feile.sideline.community" class="hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded">App</a>
+          <a href="/#features" class="hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded">Features</a>
+          <a href="/#pricing" class="hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded">Pricing</a>
+          <a href="/privacy/" class="text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded">Privacy</a>
+          <a href="/#enquire" class="hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded">Contact</a>
+        </nav>
+      </div>
+      <div class="border-t border-slate-800 mt-8 pt-8 text-center sm:text-left text-xs text-slate-600">
+        <p>&copy; 2026 Sideline Community. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
