@@ -12,17 +12,31 @@
       theme: {
         extend: {
           colors: {
+            // The apps' royal and yellow (sideline-handbook docs/brand.md): 600 is royal,
+            // 500 royalBright, 900 navy; accent 400 is the kit yellow.
             primary: {
-              50:  '#f0f9ff',
-              100: '#e0f2fe',
-              200: '#bae6fd',
-              300: '#7dd3fc',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              800: '#075985',
-              900: '#0c4a6e',
+              50:  '#F2F7FE',
+              100: '#E3EEFD',
+              200: '#C8DDFB',
+              300: '#99C0F7',
+              400: '#5F9CF2',
+              500: '#2A7BEE',
+              600: '#1153C6',
+              700: '#0D43A4',
+              800: '#0A3483',
+              900: '#062564',
+            },
+            accent: {
+              50:  '#FFFAE6',
+              100: '#FFF5C7',
+              200: '#FFEB8C',
+              300: '#FFDF47',
+              400: '#FFD200',
+              500: '#E7BD00',
+              600: '#BE9B00',
+              700: '#957800',
+              800: '#745D00',
+              900: '#5C4800',
             }
           },
           keyframes: {
@@ -52,7 +66,7 @@
     <section class="pt-16 pb-16 sm:pt-20 sm:pb-24 bg-gradient-to-b from-primary-50 via-white to-white relative overflow-hidden" aria-labelledby="hero-heading">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-100 rounded-full opacity-60 blur-3xl"></div>
-        <div class="absolute top-40 -left-20 w-72 h-72 bg-sky-100 rounded-full opacity-40 blur-2xl"></div>
+        <div class="absolute top-40 -left-20 w-72 h-72 bg-accent-100 rounded-full opacity-60 blur-2xl"></div>
       </div>
 
       <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -236,7 +250,7 @@
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-20">
           <div>
             <div class="inline-flex items-center gap-1.5 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4">
-              <svg class="w-3.5 h-3.5 text-sky-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM18 15a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 15Z"/></svg>
+              <svg class="w-3.5 h-3.5 text-accent-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM18 15a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 15Z"/></svg>
               Treoir, your AI co-organiser
             </div>
             <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Treoir recommends the right format — and explains why</h3>
@@ -310,8 +324,8 @@
                 <div class="flex justify-between text-xs text-slate-400 mb-0.5"><span class="font-mono">09:00</span><span class="text-primary-400">Pitch 1</span></div>
                 <p class="text-white text-sm font-medium">Naomh Colmcille <span class="text-slate-500">vs</span> Clann Eireann <span class="text-slate-500 text-xs">· Group A</span></p>
               </div>
-              <div class="bg-slate-800 rounded-lg p-3 border-l-4 border-sky-400">
-                <div class="flex justify-between text-xs text-slate-400 mb-0.5"><span class="font-mono">09:00</span><span class="text-sky-400">Pitch 2</span></div>
+              <div class="bg-slate-800 rounded-lg p-3 border-l-4 border-primary-400">
+                <div class="flex justify-between text-xs text-slate-400 mb-0.5"><span class="font-mono">09:00</span><span class="text-primary-300">Pitch 2</span></div>
                 <p class="text-white text-sm font-medium">Éire Óg <span class="text-slate-500">vs</span> Clan na Gael <span class="text-slate-500 text-xs">· Group B</span></p>
               </div>
               <div class="bg-amber-900/40 rounded-lg p-3 border-l-4 border-amber-400">
@@ -551,23 +565,23 @@
           </div>
 
           <!-- Founding Club -->
-          <div class="bg-white/10 border border-amber-400/50 rounded-2xl p-6 flex flex-col relative">
+          <div class="bg-white/10 border border-accent-400/50 rounded-2xl p-6 flex flex-col relative">
             <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap">
-              <span class="bg-amber-400 text-amber-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">First 10 clubs only</span>
+              <span class="bg-accent-400 text-primary-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">First 10 clubs only</span>
             </div>
             <h3 class="font-bold text-white text-lg mb-1">Founding Club</h3>
-            <p class="text-amber-200 text-sm mb-5">Lock in the early-adopter rate — forever</p>
+            <p class="text-accent-200 text-sm mb-5">Lock in the early-adopter rate — forever</p>
             <div class="mb-6">
               <span class="text-4xl font-extrabold text-white">£79</span>
-              <span class="text-amber-300 ml-1 text-sm">/year for life</span>
+              <span class="text-accent-300 ml-1 text-sm">/year for life</span>
             </div>
             <ul class="space-y-2.5 mb-8 text-sm text-primary-100 flex-1">
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-amber-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Everything in Club Annual</li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-amber-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Locked at £79/year — forever</li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-amber-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Direct input on the roadmap</li>
-              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-amber-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Deadline: end of summer 2026</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Everything in Club Annual</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Locked at £79/year — forever</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Direct input on the roadmap</li>
+              <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Deadline: end of summer 2026</li>
             </ul>
-            <a href="#enquire" class="block text-center bg-amber-400 hover:bg-amber-300 text-amber-900 font-bold py-2.5 rounded-xl transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400">
+            <a href="#enquire" class="block text-center bg-accent-400 hover:bg-accent-300 text-primary-900 font-bold py-2.5 rounded-xl transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400">
               Claim founding spot
             </a>
           </div>
@@ -584,7 +598,7 @@
 
           <!-- Left -->
           <div>
-            <p class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-4">Enquire</p>
+            <p class="text-xs font-bold uppercase tracking-widest text-accent-400 mb-4">Enquire</p>
             <h2 id="enquire-heading" class="text-3xl sm:text-4xl font-extrabold mb-5 leading-tight">Tell us what your club needs.</h2>
             <p class="text-slate-400 leading-relaxed mb-8">Whether you're interested in Sideline Féile or want to talk through what would work for your club, the best starting point is a short conversation about your setup and what you're trying to solve.</p>
 
