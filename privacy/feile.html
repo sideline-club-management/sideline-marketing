@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sideline Féile privacy policy — Sideline Community</title>
-  <meta name="description" content="What Sideline Féile stores to run a tournament, who processes it, and how to have it removed. Organiser and manager contacts only — no player records." />
+  <meta name="description" content="What Sideline Féile stores to run a tournament, who processes it, and how to have it removed. Organiser contacts only — no player records, and no contact details for team managers." />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -80,7 +80,7 @@
           </h1>
 
           <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            F&eacute;ile stores organisers, team managers, fixtures and results. It holds no information about players.
+            F&eacute;ile stores organisers, teams, fixtures and results. It holds no information about players, and no contact details for team managers.
           </p>
 
         </div>
@@ -91,7 +91,7 @@
     <section class="pb-20">
       <div class="max-w-3xl mx-auto px-4 sm:px-6">
         <div class="rounded-2xl bg-primary-50 border border-primary-100 p-6 sm:p-8">
-          <p class="text-slate-800 leading-relaxed"><span class="font-semibold">F&eacute;ile holds no information about players.</span> Running a tournament needs organisers, team managers, fixtures and results &mdash; so that is what it stores. Nobody&rsquo;s child is in the database.</p>
+          <p class="text-slate-800 leading-relaxed"><span class="font-semibold">F&eacute;ile holds no information about players.</span> Running a tournament needs organisers, teams, fixtures and results &mdash; so that is what it stores. Nobody&rsquo;s child is in the database, and neither is a team manager&rsquo;s phone number or email address.</p>
         </div>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">What is stored</h2>
@@ -99,17 +99,18 @@
         <h3 class="mt-7 font-semibold text-slate-900">If you organise</h3>
 
         <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5 marker:text-primary-400">
-          <li>Your email address, used to sign you in. There is no password &mdash; signing in sends a link to your email.</li>
-          <li>Your club&rsquo;s name, and the names and email addresses of anyone you invite to help organise or keep score.</li>
+          <li>Your email address, used to sign you in. There is no password &mdash; signing in sends a link to your email. Sign-in is by invitation: an account can only be created for an address that a club or Sideline has invited.</li>
+          <li>Your club&rsquo;s name, and the name and email address of anyone you invite to help run it. The invitation is emailed to them.</li>
           <li>The tournaments you create: name, dates, venues, pitches, age group, format, and the contact details you choose to publish on the tournament&rsquo;s page.</li>
-          <li>Any schedule sheet or document you upload.</li>
+          <li>Any schedule sheet or document you upload, including a photo or PDF of a county board&rsquo;s schedule that you ask the app to read (see below), and what the app read from it.</li>
+          <li>If you use the AI organiser, Treoir: the conversation you have with it, saved against your account.</li>
+          <li>For each referee score link you make: the name you gave it (for example &ldquo;Mark&rdquo;), the pitch it covers, the results entered through it and when it was last used.</li>
         </ul>
 
         <h3 class="mt-7 font-semibold text-slate-900">If you enter a team</h3>
 
         <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5 marker:text-primary-400">
-          <li>The club and team name.</li>
-          <li>The team manager&rsquo;s name, and their phone number and email address if given, so the organiser can reach them about fixtures.</li>
+          <li>The club name, and an optional team name.</li>
           <li>Whether the entry is confirmed and whether an entry fee has been paid. Payments themselves are not taken through the app.</li>
         </ul>
 
@@ -119,15 +120,20 @@
           <li>Fixtures, kick-off times, pitch allocations, scores and standings.</li>
         </ul>
 
+        <h3 class="mt-7 font-semibold text-slate-900">If you referee</h3>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">A referee scores from a link the organiser sends, with no account and no email address. The link carries the name the organiser gave it. While you score, your phone keeps a random ID, so the organiser can see whether a link is open on more than one phone. It holds no name or contact details, and a scoring session ends after 14 hours.</p>
+
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">What is public</h2>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">A tournament has a public page so players, parents and clubs can follow it without an account. That page shows the fixtures, times, pitches, team names, scores and standings, along with whatever contact details the organiser chose to publish. Manager phone numbers and email addresses are not shown publicly &mdash; they are visible to the organising club.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">A tournament has a public page so players, parents and clubs can follow it without an account. That page shows the fixtures, times, pitches, team names, scores and standings, along with whatever contact details the organiser chose to publish. Teams are shown by club and team name only; there are no manager contact details to show.</p>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Who else processes it</h2>
 
         <ul class="mt-4 space-y-2 text-slate-600 list-disc pl-5 marker:text-primary-400">
           <li><span class="font-medium text-slate-900">Supabase</span> hosts the database, the sign-in system and the server-side functions. Everything described above is stored there.</li>
-          <li><span class="font-medium text-slate-900">Anthropic</span> is used only when you ask the app to read a schedule or a group draw from a sheet you have uploaded, and when you use the AI organiser. The content of that request is sent to Anthropic&rsquo;s API to be turned into fixtures. Nothing else in your tournament is sent.</li>
+          <li><span class="font-medium text-slate-900">Anthropic</span> is used only in two places. When you ask the app to read a county board&rsquo;s schedule or group draw from a photo or PDF, that image or file is sent to Anthropic&rsquo;s API to be turned into fixtures. When you use Treoir, the AI organiser, your conversation is sent along with a summary of the tournament you have open: its name, date, venue, format, fixtures, scores and standings, and, once it is over, the names of the clubs that took part. The app adds no email addresses or phone numbers to it.</li>
+          <li><span class="font-medium text-slate-900">Resend</span> delivers the email inviting someone to join your club. It is sent to the address you entered, with the invited person&rsquo;s name, your club&rsquo;s name and the link to accept.</li>
         </ul>
 
         <p class="mt-4 text-slate-600 leading-relaxed">As with any website, the servers that deliver it keep standard logs &mdash; IP address, browser type, pages requested and the time &mdash; which the hosting provider records automatically. There is no analytics service, no advertising network, and no tracking of any kind.</p>
@@ -139,11 +145,11 @@
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Your rights</h2>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">You can ask for a copy of what is held about you, ask for it to be corrected, or ask for it to be deleted. Organisers can delete their own account from within the app, which removes the account and the clubs it owns. For anything else &mdash; including if you entered a team and want the manager details removed &mdash; get in touch and it will be dealt with within one month.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">You can ask for a copy of what is held about you, ask for it to be corrected, or ask for it to be deleted. Organisers can delete their own account from within the app, which removes the account and the clubs it owns. For anything else &mdash; including if you want a team entry removed &mdash; get in touch and it will be dealt with within one month.</p>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Children</h2>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">F&eacute;ile is used to run youth tournaments, but it is a tool for the adults running them. It holds no names, dates of birth or any other personal information about players. A team is recorded as a club and a team name, with an adult manager as the contact.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">F&eacute;ile is used to run youth tournaments, but it is a tool for the adults running them. It holds no names, dates of birth or any other personal information about players. A team is recorded as a club name and an optional team name, with no contact details attached.</p>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Who is responsible</h2>
 
@@ -158,7 +164,7 @@
         <p class="mt-4 text-slate-600 leading-relaxed">
           <a href="mailto:privacy@sideline.community" class="font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded">privacy@sideline.community</a>
         </p>
-        <p class="mt-14 text-sm text-slate-500">Last updated 12 September 2026.</p>
+        <p class="mt-14 text-sm text-slate-500">Last updated 9 October 2026.</p>
       </div>
     </section>
 
