@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sideline Stats privacy policy — Sideline Community</title>
-  <meta name="description" content="Sideline Stats keeps every match and squad on your phone. No account, no server, no analytics, nothing collected." />
+  <meta name="description" content="Sideline Stats keeps every match and squad on your device. No analytics and no tracking. If you turn on sync, only your email address is readable by anyone but you." />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -76,11 +76,11 @@
           </div>
 
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight mb-5">
-            Your matches stay on your phone
+            Your matches stay yours
           </h1>
 
           <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Sideline Stats has no account, no server and no analytics. Every match you track, and every squad you enter, stays on the phone you tracked it on.
+            Every match you track and every squad you enter is kept on your own phone or tablet. If you turn on sync, it travels between your devices locked with a passphrase only you know.
           </p>
 
         </div>
@@ -91,7 +91,7 @@
     <section class="pb-20">
       <div class="max-w-3xl mx-auto px-4 sm:px-6">
         <div class="rounded-2xl bg-primary-50 border border-primary-100 p-6 sm:p-8">
-          <p class="text-slate-800 leading-relaxed"><span class="font-semibold">Sideline Stats collects nothing.</span> Your matches, squads and club details are written to a database on your own phone and stay there. There is no account to create, no server to sync with, and no analytics. Nothing about you, your club or your players ever reaches us.</p>
+          <p class="text-slate-800 leading-relaxed"><span class="font-semibold">Without sync, Sideline Stats collects nothing.</span> Your matches, squads and club are written to a database on your own device and stay there, with no account and no analytics. <span class="font-semibold">With sync on, we hold one thing we can read: the email address you sign in with.</span> Your matches, squads and club go too, but encrypted on your device first, with a key made from your passphrase, which never leaves your devices. Nobody else can read them, us included.</p>
         </div>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">What the app stores, and where</h2>
@@ -101,41 +101,57 @@
         <ul class="mt-4 space-y-2 list-disc pl-6 text-slate-600 leading-relaxed">
           <li><span class="font-medium text-slate-700">Matches</span> &mdash; the teams, the code and rules, the venue and competition if you add them, and everything you log during the match: scores, wides, cards and substitutions, with their times and jersey numbers.</li>
           <li><span class="font-medium text-slate-700">Squads</span> &mdash; the players&rsquo; names and jersey numbers you enter, how you&rsquo;ve chosen their names to appear, and who was on each match&rsquo;s team sheet.</li>
-          <li><span class="font-medium text-slate-700">Your club</span> &mdash; its name, and its county if you picked it from the list.</li>
-          <li><span class="font-medium text-slate-700">A few settings</span> &mdash; last match&rsquo;s set-up so next week&rsquo;s is quicker, which match is in progress, and when you last made a backup file.</li>
+          <li><span class="font-medium text-slate-700">Your club</span> &mdash; the name you type, and its crest if you choose one from your photos or files.</li>
+          <li><span class="font-medium text-slate-700">A few settings</span> &mdash; last match&rsquo;s set-up so next week&rsquo;s is quicker, which match is in progress, and when you last made a backup file. With sync on, also your sign-in, an ID for the device, and the key that unlocks your synced matches.</li>
         </ul>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">None of it is transmitted anywhere. The app makes no network requests at all, which is also why a whole match can be tracked in airplane mode at a pitch with no signal.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">Without sync, none of it is transmitted anywhere: the app makes no network requests at all, which is also why a whole match can be tracked in airplane mode at a pitch with no signal.</p>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">The list of clubs you choose from comes built into the app, from Sport Ireland&rsquo;s open data. Searching it happens on your phone and sends nothing.</p>
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Sync, if you turn it on</h2>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">Sync is optional, and off until you turn it on in Settings. It shares your matches, squads and club between your own phone and tablet.</p>
+
+        <ul class="mt-4 space-y-2 list-disc pl-6 text-slate-600 leading-relaxed">
+          <li><span class="font-medium text-slate-700">Your email address</span> signs you in. We send a one-time code to it; there is no password. It is the same Sideline account that signs in to Sideline F&eacute;ile, and it is used for nothing else: no newsletters and no marketing.</li>
+          <li><span class="font-medium text-slate-700">Your passphrase</span> is chosen by you and never sent anywhere. Before anything leaves your device it is encrypted (AES-256) with a key that your passphrase locks. Only the locked key is stored with us, so without your passphrase nobody can read what is synced, and nobody can reset it for you.</li>
+          <li><span class="font-medium text-slate-700">What is stored:</span> one encrypted copy of your matches, squads and club for each device you sync, and the locked key, in a private folder only your account can reach. Your club&rsquo;s crest is not synced.</li>
+          <li><span class="font-medium text-slate-700">When it syncs:</span> at full time, when you come back to the app, and when you tap Sync now. Never while a match is being tracked on that device.</li>
+          <li><span class="font-medium text-slate-700">Where:</span> on Supabase&rsquo;s servers in Ireland (see below).</li>
+        </ul>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">Signing out of sync stops it on that device and leaves your matches there; the copy it last synced stays until you remove that device from another one, or delete your account.</p>
+
+        <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Who else processes it</h2>
+
+        <p class="mt-4 text-slate-600 leading-relaxed"><span class="font-medium text-slate-700">Supabase</span> hosts the sign-in system, which emails your sign-in code, and stores the encrypted files, in its EU (Ireland) region. Like any server, it keeps routine logs of requests, such as IP addresses and times, for a short period. There is no analytics service, no advertising network, and no tracking of any kind.</p>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Backup files, and anything you share</h2>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">You can make a backup file of your season, share a single match as a file, or share a match&rsquo;s timeline as text. You choose where each one goes &mdash; Files, AirDrop, email or anywhere else your phone offers &mdash; and the app never sends them anywhere by itself.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">You can make a backup file of your season, share a single match as a file, or share a match&rsquo;s timeline as text. You choose where each one goes &mdash; Files, AirDrop, email or anywhere else your phone offers &mdash; and the app never sends them anywhere by itself. Sync is not a backup: it keeps your own devices alike, and it is no substitute for a backup file kept somewhere else.</p>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">A backup file includes your squads, so it includes your players&rsquo; names. Once you send it somewhere, it is looked after by whoever or whatever you sent it to. Treat a file holding a juvenile panel the way you would treat the team sheet itself.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">A backup file includes your squads, so it includes your players&rsquo; names, and it is not encrypted. Once you send it somewhere, it is looked after by whoever or whatever you sent it to. Treat a file holding a juvenile panel the way you would treat the team sheet itself.</p>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">If you back your phone up to iCloud or a computer, that backup includes the app&rsquo;s data too. That&rsquo;s handled by Apple, under Apple&rsquo;s own privacy policy.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">If you back your phone up to iCloud, Google or a computer, that backup may include the app&rsquo;s data too. That&rsquo;s handled by Apple or Google, under their own privacy policies.</p>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">What the app does not do</h2>
 
         <ul class="mt-5 space-y-3">
-          <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No account, sign-up or login.</span></li>
+          <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No account unless you turn on sync, and then only an email address.</span></li>
           <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No analytics, crash reporting or usage measurement built into the app.</span></li>
           <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No advertising, and no advertising identifiers.</span></li>
-          <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No tracking, and nothing shared with any third party.</span></li>
+          <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No tracking, and nothing sold or shared with any third party.</span></li>
           <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No location data, and no access to your contacts.</span></li>
-          <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No photographs. The app has no way to add a picture of anyone.</span></li>
+          <li class="flex gap-3 text-slate-600"><svg class="w-5 h-5 text-primary-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>No photographs of people. The only picture the app takes in is your club&rsquo;s crest, and it stays on your device.</span></li>
         </ul>
 
-        <p class="mt-5 text-slate-600 leading-relaxed">If you have chosen in your iPhone&rsquo;s settings to share analytics with app developers, Apple may pass on reports of the app crashing. That is a choice Apple offers and you make; the app adds nothing to it.</p>
+        <p class="mt-5 text-slate-600 leading-relaxed">If you have chosen in your phone&rsquo;s settings to share analytics with app developers, Apple or Google may pass on reports of the app crashing. That is a choice they offer and you make; the app adds nothing to it.</p>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Players and children</h2>
 
         <p class="mt-4 text-slate-600 leading-relaxed">Sideline Stats is a tool for the adults who run a team: coaches, mentors and club PROs. It is not directed at children. A juvenile squad is still a list of children, though, so the app is built around that:</p>
 
         <ul class="mt-4 space-y-2 list-disc pl-6 text-slate-600 leading-relaxed">
-          <li>Players&rsquo; names stay on your phone and leave it only in a file you choose to share.</li>
+          <li>Players&rsquo; names leave your device only in a file you choose to share, or, with sync on, encrypted so that only your own devices can read them.</li>
           <li>Every event is recorded against a jersey number, not a name. A name is only looked up when it is shown, so correcting a name corrects every match.</li>
           <li>You choose how names appear &mdash; full name, surname, initials or number only &mdash; and for a juvenile squad the app asks before saving rather than assuming.</li>
           <li>You don&rsquo;t need names at all. A match tracked with numbers only works exactly the same.</li>
@@ -145,18 +161,20 @@
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Your information, and your control over it</h2>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">Because nothing is collected, we hold nothing about you or your players to request a copy of, correct or delete. It&rsquo;s all on your phone, under your control: correct or shorten a name in the squad at any time, or forget a player entirely. Forgetting a player removes their name from the squad and from every match, which then shows only the number they wore; the scores themselves don&rsquo;t change, and it can&rsquo;t be undone. Deleting the app deletes everything the app has stored. Backup files you have made are separate copies, so a forgotten name stays in any made earlier until you delete them wherever you saved or sent them.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">On your device, it&rsquo;s all under your control: correct or shorten a name in the squad at any time, or forget a player entirely. Forgetting a player removes their name from the squad and from every match, which then shows only the number they wore; the scores themselves don&rsquo;t change, and it can&rsquo;t be undone. With sync on, a forgotten player is forgotten on your other devices and in the synced copies too. Deleting the app deletes everything the app has stored on that device. Backup files you have made are separate copies, so a forgotten name stays in any made earlier until you delete them wherever you saved or sent them.</p>
+
+        <p class="mt-4 text-slate-600 leading-relaxed">If you use sync, you can ask for a copy of what we hold about you (your email address, and the encrypted files, which only your passphrase opens), ask for it to be corrected, or ask for it to be deleted. You can delete your account and everything synced yourself, in Settings &rarr; Sync, or by email: <a href="/delete-account" class="font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded">how to delete your Sideline account</a>.</p>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Changes to this policy</h2>
 
-        <p class="mt-4 text-slate-600 leading-relaxed">If a future version of the app sends anything off the device, this page will say so before that version is released, and the app&rsquo;s App Store privacy details will be updated to match.</p>
+        <p class="mt-4 text-slate-600 leading-relaxed">If a future version of the app sends anything else off the device, this page will say so before that version is released, and the app&rsquo;s privacy details in the App Store and Google Play will be updated to match.</p>
 
         <h2 class="mt-12 text-2xl font-bold text-slate-900 tracking-tight">Getting in touch</h2>
 
         <p class="mt-4 text-slate-600 leading-relaxed">
           <a href="mailto:privacy@sideline.community" class="font-medium text-primary-600 hover:text-primary-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded">privacy@sideline.community</a>
         </p>
-        <p class="mt-14 text-sm text-slate-500">Last updated 14 September 2026.</p>
+        <p class="mt-14 text-sm text-slate-500">Last updated 11 November 2026.</p>
       </div>
     </section>
 
